@@ -1,0 +1,222 @@
+html {
+    font-size: 62.5%; /* Esto hace que 1rem = 10px */
+}
+/* estilo general para el ul li */
+ul li::marker {
+    color: blue; /* Cambia el color de los círculos */
+}
+/* para los elementos del menu de navegacion en la parte superior a la derecha */
+.mi-navbar_right {
+    display: flex;
+    justify-content: end;
+    font-size: 1.7rem;
+}
+
+.mi-navbar_right li {
+    margin-right: 2rem;
+}
+
+.mi-navbar_right li a {
+    color: azure;
+}
+.mi-navbar_right a:hover {
+    color: blue;
+}
+/* para la tabla de contenido */
+.indice {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    background-color:rgb(224, 226, 226);
+    border: 2px solid rgb(61, 40, 40);
+}
+.indice a {
+    margin: 5px 5px;
+    text-decoration: none;
+    font-size: 2rem;
+    color: rgb(56, 34, 34);
+}
+.indice a:hover {
+    color: blueviolet;
+}
+/* para ocultar el logo y centrar los elementos del navbar en dispositvos medianos o inferior */
+@media (max-width: 990px) {
+    .mi-navbar_right {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .logo-sitio img{
+        display: none;
+    }
+}
+/* para darle un color blanco al icono */
+.icon-hamburguesa {
+    color: white;
+    font-size: 2.2rem;
+}
+/* para darle un color y padding al menu de navegacion */
+.menu_navegacion {
+    background-color: black;
+    padding: 2rem;
+}
+
+/* para todos los h1 de cada pagina web */
+.titulo_h1 {
+    font-family: "Rubik Mono One", monospace;
+    font-style: normal;
+    text-shadow: 12px 7px 11px rgba(242, 245, 239, 0.8);
+}
+/* estilos para las imagenes del sitio web */
+.imagenes_sitio {
+    display: block; 
+    margin: auto;  
+    max-width: 60%; 
+    height: auto;   
+    border-radius: 5%; 
+}
+
+/* para el logo del sitio web */
+.logo-sitio {
+    display: flex;
+    width: 50px;
+    border-radius: 50%;
+
+}
+
+/* tipografia y tamaño a los ul o ol */
+.listas {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.7rem;
+}
+
+.listas li {
+    margin-top: 1.3rem;
+}
+/* para darle negrita y tamaño a los h3 de las listas */
+.listas h3 {
+    font-weight: bold;
+    font-size: 2rem;
+}
+/* tamaño y tipografia de los h2 o h3 */
+.subtitulos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    font-family: "Poppins", sans-serif;
+}
+/* estilos para los articulos relacionados */
+.articulos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+.articulos li{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.articulos a {
+    color: #683030;
+    text-decoration: none;
+}
+.articulos a:hover {
+    color: blue;
+}
+/* estilo personalizado al h1 de preguntas frecuentes y acerca de nosotros*/
+.titulo_pf_an {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Oswald", sans-serif;
+    font-size: 4rem;
+    margin: 2rem;
+}
+/* estilos para los subtitlos y tamaño del acordeon */
+.mi-acordeon {
+    font-size: 2.2rem;
+    margin: 1rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+}
+.mi-acordeon:hover {
+    background-color: antiquewhite;
+}
+/* estilos para acerca de nosotros */
+.seccion-mision {
+    border-radius: 3%;
+    background-color: rgb(231, 197, 123);
+}
+.seccion-historia {
+    border-radius: 3%;
+    background-color: rgb(218, 245, 122);
+}
+/* darle tamaño y tipografia a los parrafos */
+article p {
+    font-size: 2rem;
+    font-family: "Open Sans", sans-serif;
+}
+div p {
+    font-size: 2rem;
+    font-family: "Open Sans", sans-serif;
+}
+
+/* darle fondo al pie de pagina y color al texto o tiulo */
+footer {
+    padding: 50px;
+    background-color: black;
+    color: aliceblue;
+}
+footer p {
+    font-size: 2rem;
+    font-family: "Open Sans", sans-serif;
+}
+/* le da 50px a las logos del footer */
+footer img {
+    width: 50px;
+    margin: 0%;
+}
+/* centrar los iconos */
+.iconos-redes-sociales {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.iconos-redes-sociales a {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+    margin: 10px;
+    border: 2px solid white;
+    border-radius: 50%;
+    transition: all 0.2s ease-in;
+}
+
+.iconos-redes-sociales i {
+    color: white;
+    font-size: 1.5rem;
+    transition: all 0.2s ease-in;
+}
+
+.iconos-redes-sociales a:hover {
+    background-color: white;
+    border: 2px solid rgb(13, 110, 253);
+}
+
+.iconos-redes-sociales a:hover i {
+    color: black;
+}
+/* para el nombre de derechos de autor */
+.derechos-de-autor {
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+    color: #aeaeae;
+    padding: 20px;
+}
